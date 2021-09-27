@@ -24,20 +24,20 @@ use PH7\Generator\Passcode;
 echo Passcode::generate(10); // Generate a 10 length password
 ````
 
-You can use the public constant `Passcode::DEFAULT_LENGTH` which contains `12` as the default value 
+You can use the public constant `Passcode::DEFAULT_LENGTH` which contains `6` as the default value
 
 ```php
 use PH7\Generator\Passcode;
 
-// By default, it generates a 12 length passcode 
+// By default, it generates a 6 length passcode
 echo Passcode::generate(Passcode::DEFAULT_LENGTH); 
 ````
 
-Without argument, the function will generate a 12-character passcode.
+Without argument, the function will generate a 6-character passcode.
 ```php
 use PH7\Generator\Passcode;
 
-// By default, it generates a 12 length passcode 
+// By default, it generates a 6 length passcode
 echo Passcode::generate(); 
 ````
 

@@ -16,7 +16,7 @@ final class PasscodeTest extends TestCase
 {
     public function testPasscodeLength(): void
     {
-        $length = 8;
+        $length = 10;
         $passcode = Passcode::generate($length);
 
         $this->assertSame($length, strlen($passcode));
@@ -26,6 +26,6 @@ final class PasscodeTest extends TestCase
     {
         $passcode = Passcode::generate();
 
-        $this->assertTrue(is_string($passcode));
+        $this->assertTrue(ctype_digit($passcode));
     }
 }

@@ -11,16 +11,15 @@ namespace PH7\Generator;
 
 class Passcode
 {
-    public const DEFAULT_LENGTH = 12;
-
-    private const ALPHANUMERIC = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    public const DEFAULT_LENGTH = 6;
 
     public static function generate(int $length = self::DEFAULT_LENGTH): string
     {
         $code = [];
+        $digits = range(0, 9);
 
-        for ($i = 0, $alphaLength = strlen(self::ALPHANUMERIC) - 1; $i < $length; $i++) {
-            $code[] = self::ALPHANUMERIC[mt_rand(0, $alphaLength)];
+        for ($amount = 0; $amount < $length; $amount++) {
+            $code[] = $digits[mt_rand(0, 8)];
         }
 
         return implode($code);
