@@ -1,6 +1,14 @@
 {
     "name": "ph-7/passcode-generator",
     "description": "A simple way to generate random passcodes and passwords.",
+    "keywords": [
+      "passcode",
+      "generator",
+      "passcode generator",
+      "digit",
+      "digits",
+      "security"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
