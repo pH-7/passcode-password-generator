@@ -9,6 +9,7 @@
       "digits",
       "security"
     ],
+    "homepage": "https://pierrehenry.be",
     "type": "library",
     "license": "MIT",
     "autoload": {
