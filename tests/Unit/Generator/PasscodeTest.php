@@ -14,12 +14,19 @@ use PHPUnit\Framework\TestCase;
 
 final class PasscodeTest extends TestCase
 {
-    public function testPasscodeLength(): void
+    public function testPasscodeWithSpecifiedLength(): void
     {
         $length = 10;
         $passcode = Passcode::generate($length);
 
         $this->assertSame($length, strlen($passcode));
+    }
+
+    public function testPasscodeWithDefaultLength(): void
+    {
+        $passcode = Passcode::generate();
+
+        $this->assertSame(Passcode::DEFAULT_LENGTH, strlen($passcode));
     }
 
     public function testPasscodeIsString(): void
