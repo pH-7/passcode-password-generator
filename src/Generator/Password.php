@@ -24,7 +24,7 @@ class Password
             $specialCharacters ? self::SPECIAL_CHARACTERS : []
         );
 
-        for ($iAmount = 0; $iAmount < $length; $iAmount++) {
+        for ($amount = 0; $amount < $length; $amount++) {
             $password .= $keys[array_rand($keys)];
         }
 
