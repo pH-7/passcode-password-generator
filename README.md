@@ -1,45 +1,73 @@
-# PHP Passcode Generator
+# PHP Passcodes & Passwords Generator
 
 ## 📄 Description
 
-A simple way to generate random passcodes and passwords
+A simple way to generate random passcodes and passwords 🔑
 
 
 ## 🛠 Installation (with Composer)
 
 ```bash
-composer require ph-7/passcode-generator
+composer require ph-7/passcode-password-generator
 ```
 
 ## 🛠 Server Requirement
 
-* [PHP 7.1](https://php.net/releases/7_1_0.php) or higher.
+* [PHP 7.1](https://php.net/releases/7_1_0.php) and higher 🚀
 
 
-## 🎮 Usage
+## 📄 Usage
 
-```php
-use PH7\Generator\Passcode;
-
-echo Passcode::generate(10); // Generate a 10 length password
-````
-
-You can use the public constant `Passcode::DEFAULT_LENGTH` which contains `6` as the default value
+###  For Passcodes
 
 ```php
 use PH7\Generator\Passcode;
 
-// By default, it generates a 6 length passcode
-echo Passcode::generate(Passcode::DEFAULT_LENGTH); 
+echo Passcode::generate(10); // Generate a 10-length passcode
 ````
 
-Without argument, the function will generate a 6-character passcode.
+By default, without argument, the function will generate a 6-character passcode.
 ```php
 use PH7\Generator\Passcode;
 
 // By default, it generates a 6 length passcode
-echo Passcode::generate(); 
+echo Passcode::generate();
+
+
+// You can use the public constant `Passcode::DEFAULT_LENGTH` which is 6 as the default value
+echo Passcode::generate(Passcode::DEFAULT_LENGTH);
 ````
+
+###  For Passwords
+
+```php
+use PH7\Generator\Password;
+
+echo Password::generate(16); // Generate a 16-length password
+````
+
+By default, generated passwords will contain special characters. You can disable them by mentioning the second argument to `false`
+
+```php
+use PH7\Generator\Password;
+
+// The password won't contain any special characters such as -, _, ~, |, %, ^, !, $, #, @, and ?
+echo Password::generate(Password::DEFAULT_LENGTH, false);
+````
+
+
+Without argument, the function will generate a 12-character password.
+```php
+use PH7\Generator\Password;
+
+// By default, it generates a 12-length password
+echo Password::generate();
+
+
+// Password::DEFAULT_LENGTH also gives a 12-length password
+echo Password::generate(Password::DEFAULT_LENGTH);
+````
+
 
 ## 😋 Who cooked it?
 

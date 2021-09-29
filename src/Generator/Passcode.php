@@ -11,7 +11,7 @@ namespace PH7\Generator;
 
 class Passcode
 {
-    public const DEFAULT_LENGTH = 12;
+    public const DEFAULT_LENGTH = 6;
 
     private const DIGITS = '1234567890';
 
@@ -19,7 +19,7 @@ class Passcode
     {
         $code = [];
         for ($amount = 0; $amount < $length; $amount++) {
-            $code[] = self::DIGITS[mt_rand(0, 8)];
+            $code[] = self::DIGITS[mt_rand(0, 9)];
         }
 
         return implode($code);

@@ -1,5 +1,5 @@
 {
-    "name": "ph-7/passcode-generator",
+    "name": "ph-7/passcode-password-generator",
     "description": "A simple way to generate random passcodes and passwords.",
     "keywords": [
       "passcode",
