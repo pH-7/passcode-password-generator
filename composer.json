@@ -12,9 +12,18 @@
     "homepage": "https://pierrehenry.be",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Pierre-Henry Soria",
+            "email": "hi@ph7.me",
+            "role": "Cool&Passionate Software Developer",
+            "homepage": "https://ph7.me"
+        }
+    ],
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "PH7\\": "src/"
+            "PH7\\": "src"
         }
     },
     "autoload-dev": {
@@ -22,14 +31,10 @@
             "PH7\\Generator\\Test\\": "tests"
         }
     },
-    "authors": [
-        {
-            "name": "Pierre-Henry Soria",
-            "email": "hi@ph7.me"
-        }
-    ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
