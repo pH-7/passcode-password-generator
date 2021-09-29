@@ -14,12 +14,13 @@ class Passcode
     public const DEFAULT_LENGTH = 6;
 
     private const DIGITS = '1234567890';
+    private const TOTAL_DIGITS = 9;
 
     public static function generate(int $length = self::DEFAULT_LENGTH): string
     {
         $code = [];
         for ($amount = 0; $amount < $length; $amount++) {
-            $code[] = self::DIGITS[mt_rand(0, 9)];
+            $code[] = self::DIGITS[mt_rand(0, self::TOTAL_DIGITS)];
         }
 
         return implode($code);
