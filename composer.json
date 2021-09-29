@@ -26,11 +26,6 @@
             "PH7\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "PH7\\Generator\\Test\\": "tests"
-        }
-    },
     "require": {
         "php": ">=7.1.0"
     },
