@@ -17,33 +17,33 @@ final class PasswordTest extends TestCase
     public function testPasswordWithSpecifiedLength(): void
     {
         $iLength = 8;
-        $sPassword = Password::generate($iLength);
+        $password = Password::generate($iLength);
 
-        $this->assertSame($iLength, strlen($sPassword));
+        $this->assertSame($iLength, strlen($password));
     }
 
     public function testPasswordWithDefaultLength(): void
     {
-        $sPassword = Password::generate();
+        $password = Password::generate();
 
-        $this->assertSame(Password::DEFAULT_LENGTH, strlen($sPassword));
+        $this->assertSame(Password::DEFAULT_LENGTH, strlen($password));
     }
 
     public function testPasswordIsString(): void
     {
-        $sPassword = Password::generate();
+        $password = Password::generate();
 
-        $this->assertTrue(is_string($sPassword));
+        $this->assertTrue(is_string($password));
     }
 
     public function testPasswordWithSpecialCharacters(): void
     {
-        $sPassword = Password::generate(Password::DEFAULT_LENGTH, true);
+        $password = Password::generate(Password::DEFAULT_LENGTH, true);
 
-        $this->assertSame(Password::DEFAULT_LENGTH, strlen($sPassword));
+        $this->assertSame(Password::DEFAULT_LENGTH, strlen($password));
         $this->assertTrue(
             in_array(
-                $sPassword,
+                $password,
                 ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'],
                 true
             )
@@ -52,12 +52,12 @@ final class PasswordTest extends TestCase
 
     public function testPasswordWithoutSpecialCharacters(): void
     {
-        $sPassword = Password::generate(Password::DEFAULT_LENGTH, false);
+        $password = Password::generate(Password::DEFAULT_LENGTH, false);
 
-        $this->assertSame(Password::DEFAULT_LENGTH, strlen($sPassword));
+        $this->assertSame(Password::DEFAULT_LENGTH, strlen($password));
         $this->assertFalse(
             in_array(
-                $sPassword,
+                $password,
                 ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'],
                 true
             )
