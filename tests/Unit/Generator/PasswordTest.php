@@ -52,7 +52,7 @@ final class PasswordTest extends TestCase
         $this->assertFalse($this->doesContainSpecialChars($password));
     }
 
-    private function doesContainSpecialChars($password): bool
+    private function doesContainSpecialChars(string $password): bool
     {
         $specialChars = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
 
