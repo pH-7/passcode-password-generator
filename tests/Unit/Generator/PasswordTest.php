@@ -54,8 +54,10 @@ final class PasswordTest extends TestCase
 
     private function doesContainSpecialChars($password): bool
     {
+        $specialChars = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
+
         foreach (str_split($password) as $char) {
-            if (in_array($char, ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'], true)) {
+            if (in_array($char, $specialChars, true)) {
                 return true;
             }
         }
