@@ -5,3 +5,10 @@ phpunit.xml
 
 # Ignore PHPStorm config folder
 .idea
+
+# TMP parameter files
+*.log
+*~
+*.swp
+.directory
+.DS_Store*
