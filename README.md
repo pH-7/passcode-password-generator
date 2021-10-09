@@ -2,7 +2,12 @@
 
 ## 📄 Description
 
-A simple way to generate random passcodes and passwords 🔑
+*A simple &amp; clean way to generate random passcodes and passwords 🔑*
+
+
+## 🛠 Server Requirement
+
+* [PHP 7.1](https://php.net/releases/7_1_0.php) and higher 🚀
 
 
 ## 🛠 Installation (with Composer)
@@ -10,11 +15,6 @@ A simple way to generate random passcodes and passwords 🔑
 ```bash
 composer require ph-7/passcode-password-generator
 ```
-
-## 🛠 Server Requirement
-
-* [PHP 7.1](https://php.net/releases/7_1_0.php) and higher 🚀
-
 
 ## 📄 Usage
 
