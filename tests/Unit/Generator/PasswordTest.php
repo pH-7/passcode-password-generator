@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 final class PasswordTest extends TestCase
 {
-    public function testPasswordWithSpecifiedLength(): void
+    public function testPasswordWithSpecificLength(): void
     {
         $iLength = 8;
         $password = Password::generate($iLength);
