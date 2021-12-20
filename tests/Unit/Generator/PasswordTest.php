@@ -33,7 +33,7 @@ final class PasswordTest extends TestCase
     {
         $password = Password::generate();
 
-        $this->assertTrue(is_string($password));
+        $this->assertIsString($password);
     }
 
     public function testPasswordWithSpecialCharacters(): void
