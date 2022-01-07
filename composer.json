@@ -23,7 +23,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "PH7\\": "src"
+      "PH7\\Generator\\": "src/Generator"
     }
   },
   "require": {
