@@ -1,13 +1,13 @@
 <?php
 /**
  * @author      Pierre-Henry Soria <hi@ph7.me>
- * @copyright   (c) 2021, Pierre-Henry Soria
+ * @copyright   (c) 2021-2022, Pierre-Henry Soria
  * @license     MIT License; <https://opensource.org/licenses/MIT>
  */
 
 declare(strict_types=1);
 
-namespace PH7\Generator\Test\Unit;
+namespace PH7\Generator\Tests\Unit;
 
 use PH7\Generator\Password;
 use PHPUnit\Framework\TestCase;
