@@ -7,7 +7,7 @@
 
 ## 🛠 Server Requirement
 
-* [PHP 7.1](https://php.net/releases/7_1_0.php) and higher 🚀
+* [PHP 7.3](https://php.net/releases/7_3_0.php) and higher 🚀
 
 
 ## 🛠 Installation (with Composer)
