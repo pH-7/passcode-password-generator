@@ -27,14 +27,25 @@ jobs:
       - name: Check PHP Version
         run: php -v
 
-      - name: Check Composer Version
-        run: composer -V
-
       - name: Check PHP Extensions
         run: php -m
 
-      - name: Validate composer.json and composer.lock
-        run: composer validate
+      - name: Check Composer Version
+        run: composer -V
+
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Validate composer.json & composer.lock
+        run: composer validate --strict
 
       - name: Install Composer dependencies
         run: composer install --no-interaction --no-progress --no-suggest
