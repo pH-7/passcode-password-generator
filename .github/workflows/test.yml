@@ -1,0 +1,43 @@
+name: Tests
+
+on: [ push, pull_request ]
+
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+        php-versions: [ '7.3', '7.4', '8.0', '8.1' ]
+        phpunit-version: '9.5'
+    name: PHP ${{ matrix.php-versions }} Test on ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php: ${{ matrix.php-versions }}
+          extensions: mbstring, zip
+          tools: phpunit:${{ matrix.phpunit-version }}, composer:v2
+          coverage: none
+
+      - name: Check PHP Version
+        run: php -v
+
+      - name: Check Composer Version
+        run: composer -V
+
+      - name: Check PHP Extensions
+        run: php -m
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress --no-suggest
+
+      - name: Run test suite
+        run: composer test
