@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace PH7\Generator\Tests\Unit;
+namespace PH7\Tests\Unit\Generator;
 
 use PH7\Generator\Passcode;
 use PHPUnit\Framework\TestCase;
