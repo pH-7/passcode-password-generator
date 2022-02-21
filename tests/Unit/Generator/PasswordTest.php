@@ -16,10 +16,10 @@ final class PasswordTest extends TestCase
 {
     public function testPasswordWithSpecificLength(): void
     {
-        $iLength = 8;
-        $password = Password::generate($iLength);
+        $length = 8;
+        $password = Password::generate($length);
 
-        $this->assertSame($iLength, strlen($password));
+        $this->assertSame($length, strlen($password));
     }
 
     public function testPasswordWithDefaultLength(): void
@@ -54,10 +54,10 @@ final class PasswordTest extends TestCase
 
     private function doesContainSpecialChars(string $password): bool
     {
-        $specialChars = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
+        $specialCharacters = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
 
-        foreach (str_split($password) as $char) {
-            if (in_array($char, $specialChars, true)) {
+        foreach (str_split($password) as $character) {
+            if (in_array($character, $specialCharacters, true)) {
                 return true;
             }
         }
