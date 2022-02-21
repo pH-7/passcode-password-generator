@@ -3,9 +3,10 @@
   "description": "A simple way to generate random passcodes and passwords.",
   "keywords": [
     "passcode",
+    "password",
     "generator",
     "passcode generator",
-    "password-generator",
+    "password generator",
     "digit",
     "digits",
     "security"
