@@ -34,7 +34,7 @@ use PH7\Generator\Passcode;
 echo Passcode::generate();
 
 
-// You can use the public constant `Passcode::DEFAULT_LENGTH` which is 6 as the default value
+// You can use the public `Passcode::DEFAULT_LENGTH` const, whcih also gives a 6-length passcode
 echo Passcode::generate(Passcode::DEFAULT_LENGTH);
 ````
 
@@ -81,7 +81,7 @@ echo Password::generate(Password::DEFAULT_LENGTH);
 
 ## ⚖️ License
 
-**PHP Passcode Generator** is generously distributed under the *[MIT](https://opensource.org/licenses/MIT)*.
+**PHP Passcode/Password Generator** is generously distributed under the *[MIT](https://opensource.org/licenses/MIT)* 🎉
 
 
 <!-- GitHub's Markdown reference links -->
