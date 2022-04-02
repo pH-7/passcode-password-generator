@@ -4,6 +4,8 @@
 
 *A simple &amp; clean way to generate random passcodes and passwords 🔑*
 
+[![Ko Fi - Offer Me A Coffee](media/kofi-logo.png)](https://ko-fi.com/phenry)
+
 
 ## 🛠 Server Requirement
 
@@ -15,6 +17,7 @@
 ```bash
 composer require ph-7/passcode-password-generator
 ```
+
 
 ## 📄 Usage
 
@@ -47,14 +50,12 @@ echo Password::generate(16); // Generate a 16-length password
 ````
 
 By default, generated passwords will contain special characters. You can disable them by mentioning the second argument to `false`
-
 ```php
 use PH7\Generator\Password;
 
 // The password won't contain any special characters such as -, _, ~, |, %, ^, !, $, #, @, and ?
 echo Password::generate(Password::DEFAULT_LENGTH, false);
 ````
-
 
 Without argument, the function will generate a 12-character password.
 ```php
@@ -77,6 +78,8 @@ echo Password::generate(Password::DEFAULT_LENGTH);
 [![@phenrysay][twitter-image]](https://twitter.com/phenrysay) [![pH-7][github-image]](https://github.com/pH-7)
 
 **[Pierre-Henry Soria](https://ph7.me)**, a highly passionate, zen &amp; pragmatic software engineer 😊
+
+️Would like to help? **[Offer me a coffee](https://ko-fi.com/phenry)** and boost the software development at the same time! 💪
 
 
 ## ⚖️ License
