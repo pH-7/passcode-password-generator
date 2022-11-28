@@ -20,7 +20,7 @@ class Passcode
     {
         $code = [];
         for ($amount = 0; $amount < $length; $amount++) {
-            $code[] = self::DIGITS[mt_rand(0, self::TOTAL_DIGITS)];
+            $code[] = self::DIGITS[random_int(0, self::TOTAL_DIGITS)];
         }
 
         return implode($code);
