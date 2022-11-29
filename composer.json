@@ -9,7 +9,9 @@
     "password generator",
     "digit",
     "digits",
-    "security"
+    "security",
+    "cryptography",
+    "cryptographically secure"
   ],
   "homepage": "https://pierrehenry.be",
   "type": "library",
