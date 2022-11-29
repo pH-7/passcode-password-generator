@@ -2,7 +2,7 @@
 
 ## 📄 Description
 
-*A simple &amp; clean way to generate random passcodes and passwords 🔑*
+*A simple, secure &amp; clean way to generate random passcodes and passwords 🔑*
 
 [![Ko Fi - Offer Me A Coffee](media/kofi-logo.png)](https://ko-fi.com/phenry)
 
