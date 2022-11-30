@@ -23,9 +23,10 @@ class Password
             range('Z', 'Z'),
             $specialCharacters ? self::SPECIAL_CHARACTERS : []
         );
+        $endKeysIndex = count($keys) - 1;
 
         for ($amount = 0; $amount < $length; $amount++) {
-            $password .= $keys[array_rand($keys)];
+            $password .= $keys[random_int(0, $endKeysIndex)];
         }
 
         return $password;
