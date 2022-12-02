@@ -1,6 +1,6 @@
 {
   "name": "ph-7/passcode-password-generator",
-  "description": "A simple way to generate random passcodes and passwords.",
+  "description": "A simple way to generate random cryptographically secure passcodes and passwords",
   "keywords": [
     "passcode",
     "password",
