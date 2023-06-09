@@ -79,7 +79,7 @@ echo Password::generate(Password::DEFAULT_LENGTH);
 
 **[Pierre-Henry Soria](https://ph7.me)**, a highly passionate, zen &amp; pragmatic software engineer 😊
 
-☕️ ️Would like to help? **[Offer me a coffee](https://ko-fi.com/phenry)** and boost the software development at the same time! 💪
+☕️ Would like to help? **[Offer me a coffee](https://ko-fi.com/phenry)**, and boost the maintenance of this library! 💪
 
 
 ## ⚖️ License
