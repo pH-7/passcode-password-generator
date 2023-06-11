@@ -52,13 +52,18 @@ final class PasswordTest extends TestCase
         $this->assertFalse($this->doesContainSpecialChars($password));
     }
 
+    /**
+     * Check if the given password contains any special characters.
+     *
+     * @return bool TRUE if it does contain special characters.
+     */
     private function doesContainSpecialChars(string $password): bool
     {
         $specialCharacters = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
 
         foreach (str_split($password) as $character) {
             if (in_array($character, $specialCharacters, true)) {
-                return true;
+                return true; // exit the loop
             }
         }
         return false;
