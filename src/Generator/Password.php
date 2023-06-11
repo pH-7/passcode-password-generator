@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      Pierre-Henry Soria <hi@ph7.me>
- * @copyright   (c) 2021-2022, Pierre-Henry Soria
+ * @copyright   (c) 2021-2023, Pierre-Henry Soria
  * @license     MIT License; <https://opensource.org/licenses/MIT>
  */
 
@@ -12,6 +12,7 @@ namespace PH7\Generator;
 class Password
 {
     public const DEFAULT_LENGTH = 12;
+
     private const SPECIAL_CHARACTERS = ['-', '_', '~', '|', '%', '^', '!', '$', '#', '@', '?'];
 
     public static function generate(int $length = self::DEFAULT_LENGTH, bool $specialCharacters = true): string
