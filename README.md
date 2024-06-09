@@ -2,7 +2,7 @@
 
 ## 📄 Description
 
-*A simple, secure &amp; clean way to generate random passcodes and passwords 🔑*
+*A simple, secure &amp; clean way to generate random **passcodes** and **passwords** 🔑*
 
 The library generates cryptographically secure random passwords and passcodes.
 
