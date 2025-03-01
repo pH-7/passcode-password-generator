@@ -77,7 +77,7 @@ echo Password::generate(Password::DEFAULT_LENGTH);
 [![Pierre-Henry Soria](https://s.gravatar.com/avatar/a210fe61253c43c869d71eaed0e90149?s=200)](https://ph7.me "Pierre-Henry Soria personal website")
 
 
-[![@phenrysay][twitter-image]](https://twitter.com/phenrysay) [![pH-7][github-image]](https://github.com/pH-7)
+[![@phenrysay][x-image]](https://x.com/phenrysay) [![pH-7][github-image]](https://github.com/pH-7) [![YouTube Tech Videos][youtube-icon]](https://www.youtube.com/@pH7Programming "My YouTube Tech Channel")
 
 **[Pierre-Henry Soria](https://ph7.me)**, a highly passionate, zen &amp; pragmatic software engineer 😊
 
@@ -90,5 +90,6 @@ echo Password::generate(Password::DEFAULT_LENGTH);
 
 
 <!-- GitHub's Markdown reference links -->
-[twitter-image]: https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
+[x-image]: https://img.shields.io/badge/x-000000?style=for-the-badge&logo=x&logoColor=white
 [github-image]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+[youtube-icon]: https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white
