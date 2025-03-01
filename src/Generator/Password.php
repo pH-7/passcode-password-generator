@@ -21,7 +21,7 @@ class Password
         $keys = array_merge(
             range(0, 9),
             range('a', 'z'),
-            range('Z', 'Z'),
+            range('A', 'Z'),
             $specialCharacters ? self::SPECIAL_CHARACTERS : []
         );
         $endKeysIndex = count($keys) - 1;
